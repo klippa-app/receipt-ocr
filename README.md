@@ -33,3 +33,8 @@ Run the python script
 ## License
 For this project and usage of our OCR technique you would need to create an account
 on https://dochorizon.klippa.com/ > sign up > setup organization > get API key
+
+## Background & support
+We at Klippa have 10 years of experience in OCR and have built a robust and scalable solution for our customers.
+If you have any questions or need support, please <a mailto="dochorizon-support@klippa.com">contact</a> us.
+Or visit our website: https://klippa.com/
