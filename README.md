@@ -13,8 +13,7 @@ This receipt parser uses the DocHorizon OCR API to extract information.
 - A DocHorizon API key and/or license > read more, then click [here](#license)
 - A receipt image
 - A Python 3.6+ environment
-
-_link to our swagger docs_ :https://dochorizon.klippa.com/api/swagger#/
+- [_link to our swagger docs_](https://dochorizon.klippa.com/api/swagger#/)
 
 ## How to Connect to Klippa Receipt OCR with Python
 To utilize the Klippa Receipt OCR API in your Python script, you can follow these steps:
@@ -49,12 +48,12 @@ The API may have rate limits or require specific image formats—consult the doc
 
 ## License
 For this project and usage of our OCR technique you would need to create an account
-on https://dochorizon.klippa.com/
+on [our product page](https://dochorizon.klippa.com/)
 * sign up
-* create setting up the organisation and first project
+* finish setting up the organization and create a first project
 * get your API key in the project settings > credentials section
 
 ## Background & support
 We at Klippa have 10 years of experience in OCR and have built a robust and scalable solution for our customers.
-If you have any questions or need support, please <a mailto="dochorizon-support@klippa.com">contact</a> us.
-Or visit our website: https://klippa.com/
+If you have any questions or need support, please [contact](mailto:dochorizon-support@klippa.com) us.
+Or visit our [website](https://klippa.com/)
