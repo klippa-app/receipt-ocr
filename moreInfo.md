@@ -16,8 +16,8 @@ You need to make sure you have Python installed on your system. You should also 
 Step 2: Obtain Credentials
 Sign up for Klippa’s services and get your API key. This key will be required to authenticate your requests.
 
-Step 3: Create Python Script
-Here's a sample Python script that demonstrates how to upload an image to Klippa and fetch the OCR results:
+Step 3: Run Python Script
+Here's a sample Python script that demonstrates how to upload an image to Klippa and fetch the OCR results.
 
 
 ### Explanation:
