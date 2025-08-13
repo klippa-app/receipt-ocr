@@ -10,7 +10,7 @@ This receipt parser uses the DocHorizon OCR API to extract information.
 - Response: The service returns the structured data to your application, allowing you to process it as needed.
 
 ## Things you need
-- A DocHorizon API key
+- A DocHorizon API key and/or license <a href="https://github.com/klippa-app/receipt-ocr#:~:text=for%20these%20details.-,License,-For%20this%20project">here</a>
 - A receipt image
 - A Python 3.6+ environment
 
@@ -19,20 +19,17 @@ _link to our swagger docs_ :https://dochorizon.klippa.com/api/swagger#/
 ### How to Connect to Klippa Receipt OCR with Python
 To utilize the Klippa Receipt OCR API in your Python script, you can follow these steps:
 
-Step 1: Set Up Your Environment
+`Step 1: Set Up Your Environment`
 You need to make sure you have Python installed on your system. You should also install the requests library if it’s not already installed. You can do this using pip:
 
-`pip install requests`
+```pip install requests```
 
-Step 2: Obtain Credentials
+`Step 2: Obtain Credentials`
 Sign up for Klippa’s services and get your API key. This key will be required to authenticate your requests.
 
-Step 3: Run Python Script
-Here's a sample Python script that demonstrates how to upload an image to Klippa and fetch the OCR results.
+`Step 3: Run Python Script`
+In the repo is a sample Python script that demonstrates how to upload an image to Klippa and fetch the OCR results.
 
->Please ensure that the image is the only object in the image. With edges clearly visible.
-
-<img src="/images/receipt-example-github.jpg" alt="receipt-example" width="400" height="400">
 
 ### Explanation:
 - API_URL: Change this to the actual endpoint you need to use. Check Klippa’s documentation for the correct API URLs.
@@ -45,6 +42,10 @@ Here's a sample Python script that demonstrates how to upload an image to Klippa
 Ensure you utilize secure methods to store and manage your API keys.
 Always refer to the official Klippa API documentation for the most up-to-date information, including any changes in endpoints or request formats.
 The API may have rate limits or require specific image formats—consult the documentation for these details.
+
+>Please ensure that the image is the only object in the image. With edges clearly visible.
+
+<img src="/images/receipt-example-github.jpg" alt="receipt-example" width="400" height="400">
 
 ## License
 For this project and usage of our OCR technique you would need to create an account
