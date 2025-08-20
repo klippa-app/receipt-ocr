@@ -47,7 +47,187 @@ The API may have rate limits or require specific image formats—consult the doc
 <img src="/images/receipt-example-github.jpg" alt="receipt-example" width="400" height="400">
 
 ### Example
+An example of a POST request using cURL:
+Also, the following endpoint is used:
+https://api.klippa.com/api/services/document_capturing/v1/components
 
+<details>
+<summary>Click here to see the full cURL command</summary>
+
+```
+curl -X POST \
+  -H "Authorization: Bearer your_api_key_here" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "components": {
+      "barcode": {
+        "barcode_types": ["code128"],
+        "enabled": true
+      },
+      "fraud": {
+        "enabled": true,
+        "metadata": {
+          "date": true,
+          "editor": true
+        },
+        "visual": {
+          "copy_move": true,
+          "splicing": true
+        }
+      },
+      "ocr": {
+        "enabled": true
+      }
+    },
+    "documents": [
+      {
+        "filename": "bonnetje.jpg",
+        "data": "HIER_KOMT_DE_BASE64_DATA_VAN_JE_BESTAND"
+      }
+    ]
+  }' \
+  https://api.klippa.com/api/services/document_capturing/v1/components
+```
+
+</details>
+
+<details>
+<summary>The expected JSON schema with a 200 OK response</summary>
+
+```
+{
+  "components": {
+    "barcode": {
+      "barcodes": [
+        {
+          "type": "string",
+          "value": "string"
+        }
+      ],
+      "candidates": [
+        {
+          "confidence": 0,
+          "coordinates": [
+            {
+              "file": 0,
+              "page": 0,
+              "vertices": [
+                [
+                  0
+                ]
+              ]
+            }
+          ],
+          "type": "string",
+          "value": "string"
+        }
+      ]
+    },
+    "fraud": {
+      "metadata": {
+        "date": {
+          "confidence": 0,
+          "digitized": "string",
+          "modified": "string",
+          "original": "string"
+        },
+        "editor": {
+          "confidence": 0,
+          "found": [
+            "string"
+          ],
+          "fraudulent": [
+            "string"
+          ]
+        }
+      },
+      "summary": {
+        "confidence": 0
+      },
+      "visual": {
+        "copy_move": {
+          "confidence": 0,
+          "coordinates": [
+            {
+              "file": 0,
+              "page": 0,
+              "vertices": [
+                [
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "splicing": {
+          "confidence": 0,
+          "coordinates": [
+            {
+              "file": 0,
+              "page": 0,
+              "vertices": [
+                [
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "ocr": {
+      "documents": [
+        {
+          "document_index": 0,
+          "pages": [
+            {
+              "height": 0,
+              "lines": [
+                {
+                  "coordinates": [
+                    {
+                      "file": 0,
+                      "page": 0,
+                      "vertices": [
+                        [
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "text": "string",
+                  "words": [
+                    {
+                      "coordinates": [
+                        {
+                          "file": 0,
+                          "page": 0,
+                          "vertices": [
+                            [
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "text": "string"
+                    }
+                  ]
+                }
+              ],
+              "page_index": 0,
+              "text": "string",
+              "width": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "version": "string"
+}
+```
+
+</details>
 
 ## License & API KEY
 For this project and usage of our OCR technique you would need to create an account
