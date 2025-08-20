@@ -10,7 +10,7 @@ This receipt parser uses the DocHorizon OCR API to extract information.
 - Response: The service returns the structured data to your application, allowing you to process it as needed.
 
 ## Things you need
-- A DocHorizon API key and/or license > read more, then click [here](#license)
+- A DocHorizon API key and/or license
 - A receipt image
 - A Python 3.6+ environment
 - [_link to our swagger docs_](https://dochorizon.klippa.com/api/swagger#/)
@@ -24,13 +24,14 @@ Also look for our requirement file to see which things you need to install.
 
 **Step 2: Obtain Credentials** <br/>
 Sign up for Klippa’s services and get your API key. This key will be required to authenticate your requests.
+> see how to get your API key in the section below [here](#license)
 
 **Step 3: Run Python Script** <br/>
 In the repo is a sample Python script that demonstrates how to upload an image to Klippa and fetch the OCR results.
 
 
 ### Explanation:
-- API_URL: Change this to the actual endpoint you need to use. Check Klippa’s documentation for the correct API URLs.
+- API_URL: Change this to the actual endpoint you need to use. Check [Klippa’s documentation](https://dochorizon.klippa.com/api/swagger#/) for the correct API URLs.
 - API_KEY: Place your Klippa API key here.
 - upload_receipt: This function uploads the image file to the Klippa OCR API and handles the response.
 - files: The image file is opened in binary mode and sent as part of the request.
@@ -45,12 +46,26 @@ The API may have rate limits or require specific image formats—consult the doc
 
 <img src="/images/receipt-example-github.jpg" alt="receipt-example" width="400" height="400">
 
-## License
+### Example
+
+
+## License & API KEY
 For this project and usage of our OCR technique you would need to create an account
 on [our product page](https://dochorizon.klippa.com/)
 * sign up
 * finish setting up the organization and create a first project
-* get your API key in the project settings > credentials section
+* go to the project settings > Credentials page (1 & 2)
+* click on an existing credential or create a new one
+* make sure the right service is toggled on in the 'Access' tab (3 & 4)
+* go to the 'API Keys' tab and copy the API key
+* _Optional:_ here you can also create a new API key if you want to have new keys for different use cases
+* [Link to our documentation](https://dochorizon.klippa.com/docs/platform/credentials) for further information
+
+> Image of the Access page within an existing credential
+<img src="/images/screenshot_credentials_access.png" alt="screenshot API key" width="1000" height="250">
+
+> Image of the API Keys page within an existing credential
+<img src="/images/screenshot_credentials_APIKEY.png" alt="screenshot API key" width="1000" height="250">
 
 ## Background & support
 We at Klippa have 10 years of experience in OCR and have built a robust and scalable solution for our customers.
