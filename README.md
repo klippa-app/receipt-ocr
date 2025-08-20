@@ -1,4 +1,4 @@
-# Receipt-OCR by Klippa
+# Receipt OCR engine with an AI model
 This repo is used for using our Receipt OCR engine to extract receipt information.
 This receipt parser uses the DocHorizon OCR API to extract information.
 
@@ -18,15 +18,14 @@ This receipt parser uses the DocHorizon OCR API to extract information.
 ## How to Connect to Klippa Receipt OCR with Python
 To utilize the Klippa Receipt OCR API in your Python script, you can follow these steps:
 
-`Step 1: Set Up Your Environment`
-You need to make sure you have Python installed on your system. You should also install the requests library if it’s not already installed. You can do this using pip:
+**Step 1: Set Up Your Environment** <br/>
+You need to make sure you have Python installed on your system. You should also install the request library if it’s not already installed.
+Also look for our requirement file to see which things you need to install.
 
-```pip install requests```
-
-`Step 2: Obtain Credentials`
+**Step 2: Obtain Credentials** <br/>
 Sign up for Klippa’s services and get your API key. This key will be required to authenticate your requests.
 
-`Step 3: Run Python Script`
+**Step 3: Run Python Script** <br/>
 In the repo is a sample Python script that demonstrates how to upload an image to Klippa and fetch the OCR results.
 
 
