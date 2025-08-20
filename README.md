@@ -42,7 +42,7 @@ Ensure you utilize secure methods to store and manage your API keys.
 Always refer to the official Klippa API documentation for the most up-to-date information, including any changes in endpoints or request formats.
 The API may have rate limits or require specific image formats—consult the documentation for these details.
 
->Please ensure that the image is the only object in the image. With edges clearly visible.
+>Please ensure that the image is the only object in the image with edges clearly visible.
 
 <img src="/images/receipt-example-github.jpg" alt="receipt-example" width="400" height="400">
 
@@ -230,15 +230,15 @@ curl -X POST \
 </details>
 
 ## License & API KEY
-For this project and usage of our OCR technique you would need to create an account
-on [our product page](https://dochorizon.klippa.com/)
-* sign up
-* finish setting up the organization and create a first project
-* go to the project settings > Credentials page (1 & 2)
-* click on an existing credential or create a new one
-* make sure the right service is toggled on in the 'Access' tab (3 & 4)
-* go to the 'API Keys' tab and copy the API key
-* _Optional:_ here you can also create a new API key if you want to have new keys for different use cases
+For this project and usage of our OCR technique you would need to create an account and retrieve an API key.
+Follow these steps to get your API key:
+* Sign up via the [signup page](https://dochorizon.klippa.com/public/signup)
+* Finish setting up the organization and create a first project
+* Go to the project settings > Credentials page (1 & 2)
+* Click on an existing credential or create a new one
+* Make sure the right service is toggled on in the 'Access' tab (3 & 4)
+* Go to the 'API Keys' tab and copy the API key
+  * _Optional:_ Here you can also create a new API key if you want to have new keys for different use cases
 * [Link to our documentation](https://dochorizon.klippa.com/docs/platform/credentials) for further information
 
 > Image of the Access page within an existing credential
@@ -249,5 +249,7 @@ on [our product page](https://dochorizon.klippa.com/)
 
 ## Background & support
 We at Klippa have 10 years of experience in OCR and have built a robust and scalable solution for our customers.
+Receipt OCR is one of our most popular services. Since receipt information extraction is a complex task, we have developed a robust and scalable solution that can be used by anyone.
+Thanks to our engine and receipt parser, you can extract information from receipts.
 If you have any questions or need support, please [contact](mailto:dochorizon-support@klippa.com) us.
 Or visit our [website](https://klippa.com/)
