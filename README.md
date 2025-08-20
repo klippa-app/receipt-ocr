@@ -230,7 +230,7 @@ curl -X POST \
 </details>
 
 ## License & API KEY
-For this project and usage of our OCR technique you would need to create an account and retrieve an API key.
+For this project and usage of our OCR technique, you would need to create an account and retrieve an API key.
 Follow these steps to get your API key:
 * Sign up via the [signup page](https://dochorizon.klippa.com/public/signup)
 * Finish setting up the organization and create a first project
@@ -242,10 +242,10 @@ Follow these steps to get your API key:
 * [Link to our documentation](https://dochorizon.klippa.com/docs/platform/credentials) for further information
 
 > Image of the Access page within an existing credential
-<img src="/images/screenshot_credentials_access.png" alt="screenshot API key" width="1000" height="250">
+<img src="/images/screenshot_credentials_access.png" alt="screenshot API key" width="1000" height="400">
 
 > Image of the API Keys page within an existing credential
-<img src="/images/screenshot_credentials_APIKEY.png" alt="screenshot API key" width="1000" height="250">
+<img src="/images/screenshot_credentials_APIKEY.png" alt="screenshot API key" width="1000" height="400">
 
 ## Background & support
 We at Klippa have 10 years of experience in OCR and have built a robust and scalable solution for our customers.
