@@ -253,3 +253,13 @@ Receipt OCR is one of our most popular services. Since receipt information extra
 Thanks to our engine and receipt parser, you can extract information from receipts.
 If you have any questions or need support, please [contact](mailto:dochorizon-support@klippa.com) us.
 Or visit our [website](https://klippa.com/)
+
+## Other supported languages
+This repository contains a sample Python script that demonstrates how to upload an image to Klippa and fetch the OCR results.
+But upon request we can also provide other languages. For example:
+- cUrl
+- NodeJS
+- PHP
+- GO
+- C#/.NET
+- Java
