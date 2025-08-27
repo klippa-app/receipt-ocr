@@ -1,5 +1,5 @@
-# Receipt OCR engine with an AI model
-This repo is used for using our Receipt OCR engine to extract receipt information.
+# Receipt OCR for Receipt Processing & Information Extraction
+This repo is used for using our Receipt OCR software to extract receipt information.
 This receipt parser uses the DocHorizon OCR API to extract information.
 
 ### How Klippa Receipt OCR Works:
