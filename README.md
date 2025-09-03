@@ -48,6 +48,7 @@ The API may have rate limits or require specific image formats—consult the doc
 
 ### Example
 An example of a POST request using cURL:
+
 Also, the following endpoint is used from the [swagger](https://dochorizon.klippa.com/api/swagger#/Components%20Capturing%20API/document-capturing-components) docs.
 
 <details>
