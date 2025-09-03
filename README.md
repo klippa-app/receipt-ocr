@@ -251,10 +251,10 @@ Follow these steps to get your API key:
 We at Klippa have 10 years of experience in OCR and have built a robust and scalable solution for many customers.
 Receipt OCR is one of the most popular services. Since receipt information extraction is a complex task, we have developed a robust and scalable solution that can be used by anyone.
 Thanks to the engine we use and receipt parser, you can extract information from receipts.
-To learn more about the Receipt OCR software we use, visit this [page](https://www.klippa.com/en/ocr/financial-documents/receipts/) 
+To learn more about the Receipt OCR software we use, visit this [page.](https://www.klippa.com/en/ocr/financial-documents/receipts/)
 
 If you have any questions or need support, please [contact](mailto:dochorizon-support@klippa.com) us.
-Or visit the general [website](https://klippa.com/)
+Or visit the general [website.](https://klippa.com/)
 
 ## Other supported languages
 This repository contains a sample Python script that demonstrates how to upload an image to Klippa and fetch the OCR results.
