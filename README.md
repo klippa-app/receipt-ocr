@@ -49,7 +49,7 @@ The API may have rate limits or require specific image formats—consult the doc
 ### Example
 An example of a POST request using cURL:
 Also, the following endpoint is used:
-https://api.klippa.com/api/services/document_capturing/v1/components
+https://dochorizon.klippa.com/api/services/document_capturing/v1/components
 
 <details>
 <summary>Click here to see the full cURL command</summary>
