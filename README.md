@@ -33,9 +33,9 @@ In the repo is a sample Python script that demonstrates how to upload an image t
 ### Explanation:
 - API_URL: Change this to the actual endpoint you need to use. Check [Klippa’s documentation](https://dochorizon.klippa.com/api/swagger#/) for the correct API URLs.
 - API_KEY: Place your Klippa API key here.
-- upload_receipt: This function uploads the image file to the Klippa OCR API and handles the response.
-- files: The image file is opened in binary mode and sent as part of the request.
-  Response Handling: The script checks if the request was successful and prints the extracted data or an error message.
+- image_path: Change this path to the actual path of the image you want to upload.
+- request.components: You can enable of disable the different components in the request.
+- At the end of the code, there is an example usage piece that can be used to test the code.
 
 ### Important Notes:
 Ensure you use secure methods to store and manage your API keys.
@@ -55,38 +55,45 @@ Also, the following endpoint is used from the [swagger](https://dochorizon.klipp
 <summary>Click here to see the full cURL command</summary>
 
 ```
-curl -X POST \
-  -H "Authorization: Bearer your_api_key_here" \
-  -H "Content-Type: application/json" \
+curl -X POST \\
+  -H "x-api-key: {your-api-key}" \\
+  -H "Content-Type: application/json" \\
   -d '{
-    "components": {
-      "barcode": {
-        "barcode_types": ["code128"],
-        "enabled": true
+  "components": {
+    "barcode": {
+      "barcode_types": [
+        "string"
+      ],
+      "enabled": false
+    },
+    "fraud": {
+      "enabled": false,
+      "metadata": {
+        "date": false,
+        "editor": false
       },
-      "fraud": {
-        "enabled": true,
-        "metadata": {
-          "date": true,
-          "editor": true
-        },
-        "visual": {
-          "copy_move": true,
-          "splicing": true
-        }
-      },
-      "ocr": {
-        "enabled": true
+      "visual": {
+        "copy_move": false,
+        "splicing": false
       }
     },
-    "documents": [
-      {
-        "filename": "bonnetje.jpg",
-        "data": "HIER_KOMT_DE_BASE64_DATA_VAN_JE_BESTAND"
-      }
-    ]
-  }' \
-  https://api.klippa.com/api/services/document_capturing/v1/components
+    "ocr": {
+      "enabled": false
+    }
+  },
+  "documents": [
+    {
+      "content_type": "string",
+      "data": "string",
+      "file_id": "string",
+      "filename": "string",
+      "page_ranges": "string",
+      "password": "string",
+      "url": "string"
+    }
+  ]
+}' \\
+  https://dochorizon.klippa.com/api/services/document_capturing/v1/components
 ```
 
 </details>
@@ -242,10 +249,9 @@ Follow these steps to get your API key:
 * [Link to documentation](https://dochorizon.klippa.com/docs/platform/credentials) for further information
 
 > Image of the Access page within an existing credential
-<img src="/images/screenshot_credentials_access.png" alt="screenshot API key" width="1000" height="400">
+<img src="/images/access_credentials_page_ReceiptOCR.png" alt="screenshot API key" width="1000" height="400">
 
-> Image of the API Keys page within an existing credential
-<img src="/images/screenshot_credentials_APIKEY.png" alt="screenshot API key" width="1000" height="400">
+> In the API keys tab you will find the API key
 
 ## Background & support
 We at Klippa have 10 years of experience in OCR and have built a robust and scalable solution for many customers.
